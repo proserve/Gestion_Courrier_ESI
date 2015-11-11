@@ -61,14 +61,6 @@
 	display: inline-block;
 }
 
-.v-app {
-	background: #353637;
-}
-
-.v-app[id*="overlays"] {
-	height: 0;
-}
-
 .login-bg {
 	content: "";
 	position: absolute;
@@ -273,7 +265,7 @@ div.login-panel {
 	margin: 0;
 }
 
-.v-webkit  .menu .v-nativebutton:before {
+.menu .v-nativebutton:before {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8e8), color-stop(100%, #d3d3d3));
 	background: -webkit-linear-gradient(top, #fff 0%, #777 100%);
 	-webkit-background-clip: text;
@@ -287,7 +279,7 @@ div.login-panel {
 	transition: opacity ease-in-out 200ms;
 }
 
-.v-webkit  .menu .v-nativebutton:hover:before, .v-webkit  .menu .v-nativebutton:focus:before {
+.menu .v-nativebutton:hover:before, .menu .v-nativebutton:focus:before {
 	opacity: 1;
 }
 
@@ -309,7 +301,7 @@ div.login-panel {
 	-webkit-transition: none;
 }
 
-.v-webkit  .menu .v-nativebutton.selected:before {
+.menu .v-nativebutton.selected:before {
 	text-shadow: none;
 	opacity: 1;
 }
@@ -431,7 +423,7 @@ div.login-panel {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.07);
 }
 
-.v-ie8  .layout-panel {
+.layout-panel {
 	border: 1px solid #d8d9d9;
 }
 
@@ -3663,6 +3655,12 @@ body .dashboard.v-app .v-app-loading {
 .dashboard .v-Notification-system .v-Notification-caption {
 	display: block;
 	margin: 0;
+}
+
+.dashboard .v-Notification-animate-out {
+	-webkit-animation: v-notification-animate-out 400ms;
+	-moz-animation: v-notification-animate-out 400ms;
+	animation: v-notification-animate-out 400ms;
 }
 
 .dashboard .v-Notification.v-position-top {
