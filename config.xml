@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+<username>alfresco</username>
+<password>admin</password>
+<port>5432</port>
+<host>localhost</host>
+<databaseName>alfresco</databaseName>
+<alfrescoUsername>admin</alfrescoUsername>
+<alfrescoPassword>admin</alfrescoPassword>
+<alfrescoHost>localhost</alfrescoHost>
+<alfrescoPort>8080</alfrescoPort>
+</configuration>
